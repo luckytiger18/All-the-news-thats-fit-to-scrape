@@ -1,12 +1,12 @@
 # All-the-News-Thats-Fit-to-Scrape
 
-##Overview
+## Overview
 
-This is an application tht lets user view and leave comments of the latest news. The app uses Cheerio ro scrape news from HuffPost and stores them in MongDB. 
+This is an application tht lets user view and leave comments of the latest news. The app uses Cheerio to scrape news from HuffPost and stores them in MongDB. 
 
-##Technologies
-| Frontend | Backend
-|-----------| -----------|
+## Technologies
+| Frontend | Backend |
+|----------- | -----------|
 | HTML | Nodejs |
 | CSS | Express |
 | JavaScript | MongoDB |
