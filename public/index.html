@@ -8,13 +8,8 @@
     <title>News from New York Times - Astrology Section</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- Custom styles for this template -->
-    <link href="css/heroic-features.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -35,10 +30,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Saved Articles</a>
                     </li>
                 </ul>
             </div>
@@ -52,11 +44,13 @@
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt
                 possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam
                 repellat.</p>
-            <a href="https://www.nytimes.com/topic/subject/astrology" class="btn btn-primary btn-lg">Scrape the News
-                from New York Times - Astrology Section!</a>
+            <button type="button" id="scrapeButton" class="btn btn-primary btn-lg" data-toggle="modal"
+                data-target="#exampleModalCenter">Scrape the News
+                from New York Times - Astrology Section!
+            </button>
         </header>
 
-        <div class="row text-center">
+        <div class="row text-center" id="articleCard">
 
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card h-100">
@@ -66,13 +60,34 @@
                         <p class="card-author">Article by:</p>
                         <p class="card-summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
                             necessitatibus neque.</p>
-
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Add to My Favorites</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni
+                            sapiente, tempore debitis beatae culpa natus architecto.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Add to My Favorites</a>
+                    </div>
+                </div>
+            </div>
+
 
 </body>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- Link to JS file -->
+<script src="./newsScraper.js"></script>
 
 </html>
